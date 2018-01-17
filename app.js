@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   db.collection('entry').find().toArray((err, result) => {
     if (err) 
     	return console.log(err)
-    res.render('index', {quotes: result});
+    res.render('index', {data: result});
   })
 })
 
