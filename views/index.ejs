@@ -74,12 +74,12 @@
          <table class="table">
           <tr><th>Name</th>
           <th>Email</th><th>Delete</th><th>Update</th></tr>
-            <% for(var i=0; i<quotes.length; i++) {%>
+            <% for(var i=0; i<data.length; i++) {%>
               <tr>
-                <td><%= quotes[i].name %></td>
-                <td><%= quotes[i].email %></td>
-                <td><button class="btn btn-danger del-btn" data-id="<%= quotes[i]._id %>">X</button></td>
-                <td><button class="btn btn-info up-btn" data-name="<%= quotes[i].name %>" data-email="<%= quotes[i].email %>" data-id="<%= quotes[i]._id %>">Update</button></td>
+                <td><%= data[i].name %></td>
+                <td><%= data[i].email %></td>
+                <td><button class="btn btn-danger del-btn" data-id="<%= data[i]._id %>">X</button></td>
+                <td><button class="btn btn-info up-btn" data-name="<%= data[i].name %>" data-email="<%= data[i].email %>" data-id="<%= data[i]._id %>">Update</button></td>
               </tr>
             <% } %>
           </table>  
