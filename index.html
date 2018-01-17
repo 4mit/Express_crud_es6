@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  	    .form-inline{
+  	    	margin-top: 90px;
+		    padding: 10px;
+		    box-shadow: 0 3px 6px rgba(72, 65, 65, 0.16), 0 3px 6px rgba(19, 13, 13, 0.2);
+  	    }
+  </style>
+</head>
+<body>
+  <div class="col-xs-6 col-xs-offset-3">
+  		<div>
+  			<form action="/addItem" method="POST" class="form-inline">
+	  			<div class="form-group">
+	  				<input type="text" placeholder="name" name="name" class="form-control">		
+	  			</div>
+
+	  			<div class="form-group">
+	  				<input type="text" placeholder="Email Address" name="email" class="form-control">
+	  					
+	  			</div>
+
+	  			<div class="form-group">
+	  				<button type="submit" class="btn btn-warning"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>		
+	  			</div>
+		  </form>
+  		</div><br>
+  		<div>
+  			<a href="/listall">Show All Records</a>
+  		</div>	
+  </div>
+</body>
+</html>
